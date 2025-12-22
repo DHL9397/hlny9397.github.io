@@ -61,6 +61,7 @@
     ></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha256-5P1JGBOIxI7FBAvT/mb1fCnI5n/NhQKzNUuW7Hq0fMc=" crossorigin="anonymous"></script>
     <script src="./dist/guest.js"></script>
+    <script src="https://cdn.weavely.ai/embed.js"></script>
 </head>
 
 <body data-audio="./assets/music/pure-love-304010.mp3" data-confetti="true" data-time="2026-01-11 17:00:00">
@@ -384,7 +385,7 @@
                             <div class="collapse" id="collapseQris2">
                                 <hr class="my-2 py-1">
                                 <div class="d-flex justify-content-center align-items-center">
-                                    <img src="./assets/images/qrlong.jpg" data-src="./assets/images/qrlong.jpg" alt="donate" class="img-fluid rounded-3 mx-auto bg-white">
+                                    <img src="./assets/images/qryen.jpg" data-src="./assets/images/qryen.jpg" alt="donate" class="img-fluid rounded-3 mx-auto bg-white">
                                 </div>
                             </div>
                         </div>
@@ -415,6 +416,53 @@
                         </div>
                     </div>
                 </section>
+                <section class="bg-light-dark my-0 pb-0 pt-3" id="rsvp">
+                    <div class="container text-center">
+                        <div class="border rounded-5 shadow p-3 mb-2">
+                            <h2 class="font-esthetic text-center mt-2 mb-4 text-danger" id="rsvp-title" style="font-size: 2.25rem;"></h2>
+                            <p class="py-2 m-0" id="rsvp-subtitle" style="font-size: 0.95rem;"></p>
+                            <button type="button" class="btn btn-primary" id="rsvp-groom" data-bs-toggle="modal" data-bs-target="#exampleModalCenter1">
+                            </button>
+                            <button type="button" class="btn btn-secondary" id="rsvp-bride" data-bs-toggle="modal" data-bs-target="#exampleModalCenter2">
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <!-- Modal RSVP Groom -->
+                <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle1">RSVP Nhà Trai</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div data-weavely-form="d285134f-9082-4256-95d6-8d3c1e885a41" data-weavely-mode="embed" style="width:100%"></div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary close-modal" data-bs-dismiss="modal"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal RSVP Bride -->
+                <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle2" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle2">RSVP Nhà Gái</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                            </div>
+                            <div class="modal-body">
+                                <div data-weavely-form="99e11886-1632-4c75-9d5d-c0f07427d9f3" data-weavely-mode="embed" style="width:100%"></div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary close-modal" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- Wave Separator -->
                 <div class="svg-wrapper">
